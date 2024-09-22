@@ -1,0 +1,20 @@
+{
+    "extends": "@tsconfig/node20/tsconfig.json",
+    "compileOnSave": false,
+    "compilerOptions": {
+        "outDir": "public/odist",
+        "composite": true,
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "allowSyntheticDefaultImports": true,
+        "allowJs": true,
+        "checkJs": true
+    },
+    "include": [
+        "./vite.config.ts",
+        "./vite.config.js",
+        "./postcss.config.cjs",
+        "./eslint.config.ts",
+        "./eslint.config.js"
+    ]
+}

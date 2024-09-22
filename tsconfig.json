@@ -1,0 +1,61 @@
+{
+    "compilerOptions": {
+        "incremental": true,
+        "target": "ES2022",
+        "jsx": "preserve",
+        "jsxFactory": "h",
+        "jsxImportSource": "vue",
+        "lib": ["ESNext", "DOM", "WebWorker"],
+        "useDefineForClassFields": true,
+        "baseUrl": "resources/js",
+        "module": "ES2022",
+        "moduleResolution": "Node",
+        "paths": {
+            "@/*": ["src/*"]
+        },
+        "resolveJsonModule": true,
+        "types": ["unplugin-vue-macros/vue2-macros-global"],
+        "allowArbitraryExtensions": true,
+        "allowJs": true,
+        "strict": false,
+        "strictNullChecks": true,
+        "allowUnusedLabels": false,
+        "noUncheckedIndexedAccess": false,
+        "noEmit": true,
+        "outDir": "public/dist",
+        "removeComments": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "isolatedModules": true,
+        "verbatimModuleSyntax": true,
+        "skipLibCheck": true,
+        "pretty": true
+    },
+    "vueCompilerOptions": {
+        "target": 2.7,
+        "plugins": ["unplugin-vue-macros/volar"],
+        "vueMacros": {
+            "defineModels": {
+                "unified": true
+            }
+        }
+    },
+    "references": [{ "path": "./tsconfig.node.json" }],
+    "include": ["resources/**/*"],
+    "exclude": [
+        "./app",
+        "./bootstrap",
+        "./config",
+        "./database",
+        "./docker",
+        "./docs",
+        "./lang",
+        "./patches",
+        "./public",
+        "./routes",
+        "./tests",
+        "./vendor",
+        "resources/views"
+    ]
+}
